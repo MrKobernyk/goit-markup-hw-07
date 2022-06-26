@@ -1,0 +1,181 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $background-footer-hero-color;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    &__adress,
+    &__adress-street {
+        display: block;
+
+        color: $active-text-color;
+        text-decoration: none;
+        font-style: normal;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    &__adress-contact {
+        display: block;
+        margin-top: 9px;
+
+        color: $footer-contacts-color;
+        text-decoration: none;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    &__adress-street:hover,
+    &__adress-street:focus,
+    &__adress-contact:hover,
+    &__adress-contact:focus {
+        color: $accent-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        }
+
+    &__left {
+        margin-right: 70px;
+        }
+
+    &__center {
+        display: flex;
+        flex-direction: column;
+        margin-right: 93px;
+        }
+
+    &__button {
+        display: flex;
+        gap: 12px;
+        }
+
+    &__right input {
+        height: 50px;
+        width: 358px;
+        padding: 15px 16px;
+        color: $active-text-color;
+
+        outline: none;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        }
+
+    &__right input::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+        }
+
+    &__submit-button {
+        position: relative;
+        overflow: hidden;
+
+        height: 50px;
+        min-width: 200px;
+        border: none;
+        border-radius: 4px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        padding: 10px 62px 10px 29px;
+        text-align: left;
+
+        color: $active-text-color;
+        background-color: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    &__submit-button:hover,
+    &__submit-button:focus {
+        background-color: #188ce8;
+        }
+
+    &__submit-button:active {
+        background-color: #1269af;
+    }
+
+    &__submit-svg {
+        position: absolute;
+        top: 13px;
+        right: 28px;
+        fill: $active-text-color;
+
+        transform: translateY(0);
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    &__submit-svg-secondary {
+        position: absolute;
+        top: 63px;
+        right: 28px;
+        fill: $active-text-color;
+
+        transform: translateY(0);
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    &__submit-button:hover &__submit-svg,
+    &__submit-button:hover &__submit-svg-secondary,
+    &__submit-button:focus &__submit-svg,
+    &__submit-button:focus &__submit-svg-secondary {
+        transform: translateY(-50px);
+        }
+
+    &__join {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $active-text-color;
+        margin-bottom: 20px;
+        margin-top: 12px;
+        }
+
+    &__social {
+        display: flex;
+        }
+
+    &__social li:not(:last-child) {
+        margin-right: 10px;
+        }
+
+    &__social a {
+        fill: $active-text-color;
+        }
+
+    &__social-button {
+        display: block;
+        border-radius: 50%;
+        padding: 12px;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    &__social-button:hover,
+    &footer__social-button:focus {
+        background-color: $accent-color;
+        }
+}
